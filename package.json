@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\"",
     "dev": "parcel src/*index.html",
-    "build": "parcel build src/*index.html --public-url /goit-js-hw-10-food-service/"
+    "build": "parcel build src/*index.html --public-url /goit-js-hw-10-food-service/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -21,9 +23,11 @@
   "homepage": "https://Grek-88.github.io/goit-js-hw-10-food-service",
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
-    "parcel-plugin-handlebars-precompile": "^1.0.2"
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1"
   },
   "dependencies": {
+    "gh-pages": "^3.2.2",
     "handlebars": "^4.7.7"
   }
 }
