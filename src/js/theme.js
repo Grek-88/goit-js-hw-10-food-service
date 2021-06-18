@@ -6,7 +6,6 @@ const Theme = {
   DARK: 'dark-theme',
 };
 
-
 if (localStorage.theme === 'true') {
     body.classList.add(Theme.LIGHT, Theme.DARK);
     checkBoxTheme.checked = true
